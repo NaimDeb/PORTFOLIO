@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+header{
+    padding: 10px;
+    background-color: white;
+    height: 110px;
+    width: 100%;
+    border-radius: 0 0 500px 500px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+body{
+    background-color: #1c211e;
+}
+
+h1{
+    font-size: 100px;
+    text-wrap: nowrap;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    text-shadow: white 1px 0 50px;
+
+    /* Gradient */
+     background: linear-gradient(95deg, rgba(0,255,106,1) 0%, rgba(255,255,255,1) 100%);
+    /* On rend le texte transparent et le background en tant que masque */
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
+}
+
+h2{
+    margin-bottom: 30px;
+    text-decoration: underline;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.2rem;
+    text-shadow: black 2px 3px 10px;
+}
+
+/* FLEX */
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center{
+    align-items: center;
+    text-align: center;
+}
+
+.space_between{
+    justify-content: space-between;
+}
+
+.jc_center{
+    justify-content: center;
+}
+
+
+.logo{
+    width: 50px;
+}
+
+.liste{
+    list-style: none;
+    font-size: large;
+    width: 800px;
+}
+
+.liste a{
+    text-decoration:underline;
+    text-wrap: nowrap;
+}
+
+
+
+
+.gap {
+    gap: 50px;
+}
+
+.margin{
+    margin:auto;
+}
+
+.black{
+
+    color: black;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.margin_bottom{
+    margin-bottom: 10px;
+}
+
+.test{
+    background-color: red;
+}
+
+.white{
+
+    color: white;
+}
+
+.container{
+    width: 100%;
+    max-width: 3000px;
+}
+
+
+/* Section HERO */
+.hero{
+    padding: 50px;
+}
+
+.heroImg{
+    width: 150px;
+    height:250px;
+}
+.heroImg img{
+    width: 400px;
+    height: 400px;
+}
+
+.heroContent{
+    width: 600px;
+    height: 300px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+.heroText p{
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+/* Tout sur les boutons */
+
+.btn{
+    background-color: white;
+    border-radius: 15px;
+    text-wrap: nowrap;
+    text-align: center;
+    padding: 10px;
+    
+
+}
+
+.bigbtn{
+    font-size: medium;
+    max-height: 35px;
+}
+
+.smlbtn{
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    font-size: x-large;
+}
+
+
+/* Section Exploits */
+
+
+.div_projet{
+    /* background-image: url(src="https://static.vecteezy.com/system/resources/thumbnails/015/274/044/small/banner-web-template-abstract-black-curved-shapes-with-lighting-on-dark-background-vector.jpg") */
+    position: relative;
+    padding: 30px;
+    margin-bottom: 400px;
+}
+
+/* .img_banner{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+} */
+
+.div_projet_txt{
+    width: 40%;
+    position: absolute;
+}
+
+.left_projet .div_projet_txt{
+    right: 10%;
+
+}
+
+.right_projet .div_projet_txt{
+    left: 10%;
+
+}
+
+.article_projet{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+}
+
+.left_projet .article_projet{
+    left: 10%;
+
+}
+
+.right_projet .article_projet{
+    right: 10%;
+
+}
+
+
+.article_projet img{
+    /* Position relative pour la caption */
+    position: relative; 
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+}
+
+/* Caption d'image */
+.article_projet figcaption{
+    position: absolute;
+    background-color: #47474797;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.separateur{
+    width: 800px;
+    height: 3px;
+    background-color: white;
+    margin: 30px auto;
+}
+
+.separateur_vertical{
+    width: 3px;
+    height: 400px;
+    background-color: #fff;
+    margin: 10px 30px;
+}
+
+/* Sections qualités */
+
+.section_qualite{
+    padding: 40px 80px;
+    width: 100%;
+    height: 600px;
+    
+}
+
+.qualite{
+    background-color: white;
+    color: black;
+    border-radius: 90px;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    
+}
+
+.div_qualite_list{
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+}
+
+.qualitediv{
+    padding: auto;
+    margin-bottom: 20px;
+}
+
+.qualitetext{
+    overflow: hidden;
+    background-color: pink;
+    height: 0;
+    width: 100px;
+    text-align: center;
+    
+
+    transition: all 0.5s ease-in-out;
+}
+
+/* Animation texte qualité */
+.qualite:hover + .qualitetext{
+    display: block;
+    height: 20px;
+}
+
+
+
