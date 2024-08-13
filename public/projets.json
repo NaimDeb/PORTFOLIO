@@ -1,0 +1,29 @@
+[
+    {
+        "titre": "Mon premier site",
+        "date": "03/2024",
+        "description": "Mon tout premier vrai site, fait durant ma formation La Toile d'emLyon.",
+        "image": "assets/PremierSite.png",
+        "link": "#",
+        "tags": ["Front-End", "Formation", "Site web", "Hidden"]
+
+    },
+    {
+        "titre": "Poulet Wok Companion App",
+        "date": "04/2024",
+        "description": "Première utilisation de Figma, exercice de contact avec un client pour l'aider a créer une application pour son restaurant. Fait durant ma formation La Toile d'emLyon en groupe avec Tytoane Berlant.",
+        "image": "assets/PouletWok.png",
+        "link": "#",
+        "tags": ["Figma", "Design", "Application mobile"]
+
+    },
+    {
+        "titre": "EcoChallenge",
+        "date": "06/2024",
+        "description": "Projet final de ma formation en groupe avec Léo Belin, Mathéo Chapeileiro, Shafi Kunduzi et Steve Debard. Design d'application + Site sur le sujet 'Améliorer l'éducation sur la lutte contre le changement climatique.' ",
+        "image": "assets/EcoChallenge.png",
+        "link": "#",
+        "tags": ["Figma", "Design", "Application mobile", "Front-End"]
+
+    }
+]

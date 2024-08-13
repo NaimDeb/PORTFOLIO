@@ -25,6 +25,9 @@ body{
     overflow-x: hidden;
 }
 
+h2{
+    font-size:3.5vw;
+}
 
 /* Font */
 .open-sans-gras {
@@ -309,6 +312,7 @@ header a i{
 
 .liste_articles{
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 3vw;
 }
 
@@ -322,6 +326,7 @@ header a i{
 
 .projet_article{
     margin-bottom: 5vh;
+    flex-basis: 30%;
 }
 
 .projet_article_img{

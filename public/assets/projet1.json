@@ -1,0 +1,8 @@
+{
+    "titre": "Mon premier site",
+    "date": "03/2024",
+    "description": "Mon tout premier vrai site, fait durant ma formation La Toile d'emLyon.",
+    "image": "assets/PremierSite.png",
+    "link": "#",
+    "tags": ["Front-End", "Formation", "Site web", "Hidden"]
+}
