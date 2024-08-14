@@ -1,8 +1,40 @@
 {
+    "index":1,
     "titre": "Mon premier site",
     "date": "03/2024",
     "description": "Mon tout premier vrai site, fait durant ma formation La Toile d'emLyon.",
-    "image": "assets/PremierSite.png",
+    "coverimage": "/assets/PremierSite.png",
     "link": "#",
-    "tags": ["Front-End", "Formation", "Site web", "Hidden"]
+    "tags": ["Front-End", "Formation", "Site web", "Hidden"],
+
+
+
+    "texte":[
+
+        {
+            "type":"chapter",
+            "content": "Création"
+        },
+
+
+        {
+            "type":"text",
+            "content": "Voici le début de mon aventure  cblalblblalblabl blalblblalblabl blalblblalblabl blalblblalblabl blalblblalblabl blalblblalblablblalblblalblabl blalblblalblabl"
+        },
+
+        {
+            "type":"image",
+            "src": "/assets/PremierSite.png",
+            "alt": "Page d'accueil de mon premier site"
+        },
+        {
+            "type":"image",
+            "src": "/assets/PremierSite.png",
+            "alt": "Première utilisation des embed"
+        },
+        {
+            "type":"text",
+            "content": "Il n'y a pas grand chose mais voila."
+        }
+    ]
 }

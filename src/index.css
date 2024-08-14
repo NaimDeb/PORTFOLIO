@@ -13,10 +13,14 @@ html{
 
 header{
     /* background-color: #0e100f; */
-    background: linear-gradient(0deg, rgba(14,16,15,1) 0%, rgba(44, 44, 44, 0.3) 100%);
+    background-color: #212121;
+    box-shadow: black 1px 1px 5px;
     width: 100vw;
     height: 5vh;
     align-items: center;
+    z-index: 1;
+    position: fixed;
+    top:0;
 }
 
 body{
@@ -307,6 +311,7 @@ header a i{
     font-size: 1.5vh;
     text-shadow: none;
     max-height: 3vh;
+    list-style: none;
 }
 
 
@@ -518,4 +523,106 @@ footer a{
 .footer_sommaire ul{
     list-style: none;
 
+}
+
+/* Page projets */
+
+
+.sommaire {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 46px;
+    right: 0;
+    align-self: flex-start;
+    padding-left:50px;
+    background-color: #212121;
+}
+.sommaire li {
+    list-style: none;
+  margin-top:20px;
+}
+
+.sommaire a {
+    text-decoration: none;
+    color: #dedede;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out
+}
+
+.sommaire a:hover {
+  color: #ffffff;
+}
+
+.img_projet_main{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 2vh;
+
+}
+
+.projet_div{
+    color: #dedede;
+    padding: 0 20vw;
+    margin-right: 15%;
+}
+
+.projet_div h1{
+    font-size: 2vw;
+    margin-bottom: 8vh;
+    text-wrap: nowrap
+;}
+
+.projet_div h2{
+    font-size: 1.5vw;
+    margin-bottom: 4vh;
+    
+}
+
+.projet_div img{
+    object-fit:cover;
+    display: block;
+    margin: auto;
+    width: 45vw;
+    height: 50vh;
+}
+
+
+.projet_div_img_desc{
+    text-align: end;
+    width: 100%;
+    padding-left: 15%;
+}
+
+.projet_div p, .projet_div_img_desc{
+    margin-bottom: 8vh;
+}
+
+.tags_projet{
+    justify-content: flex-end;
+    gap:0.5vw;
+    align-items: center;
+    font-size: 0.5vw;
+    text-wrap: nowrap;
+}
+
+.projet_div ul {
+    position:absolute;
+    right: 20%;
+    top:60%
+    
+}
+
+.chargement{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    top:0;
+    width: 100%;
+    height: 100%;
+    font-size: 15vw;
+    color:#dedede;
+    background-color:#000000;
+    text-align: center;
 }
