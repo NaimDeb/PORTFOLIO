@@ -1,0 +1,89 @@
+{
+    "index": 2,
+    "titre": "Poulet Wok Companion App",
+    "date": "04/2024",
+    "description": "Travail avec client pour fabriquer une application mobile.",
+    "coverimage": "/assets/PouletWok.png",
+    "link": "https://www.figma.com/design/g4ptHvrdZflggUTictj2EE/Projet-Naim-Tytoane",
+    "tags": ["Figma","Design", "Application mobile"],
+    "texte": [
+        {
+            "type": "chapter",
+            "content": "Déroulement"
+        },
+        {
+            "type": "text",
+            "content": "Notre premier gros projet de groupe fut une application mobile répondant aux attentes d'un client dont nous avons eu un entretien avec, le projet était en binôme et, après un échange de 20 minutes avec le client , notre but était de créer un prototype d'application en suivant un schéma bien précis. Notre groupe a reçu un client qui demandait d'avoir une application de \"gestion de commandes pour son restaurant\"."
+        },
+        {
+            "type": "chapter",
+            "content": "Planification"
+        },
+        {
+            "type": "text",
+            "content": "Persona\nNous avons du commencer par créer un Persona, un personnage fictif qui agit en tant que fil rouge permettant de proposer un service adapté aux utilisateurs, nous lui avons créé des objectifs et des pain points, qui sont les choses qui le dérange le plus et qui deviennent les choses les plus importantes a faire dans notre application."
+        },
+        {
+            "type": "image",
+            "src": "/assets/PersonaProjet2.png",
+            "alt": "Notre persona, Philippe"
+        },
+        {
+            "type": "text",
+            "content": "Parcours Utilisateur\nNous avons rapidement fait un parcours utilisateur, pour nous aider a voir ce qu'il faut ajouter dans notre application."
+        },
+        {
+            "type": "image",
+            "src": "/assets/ParcoursUtilisateurProjet2.png",
+            "alt": "Parcours utilisateur de notre Persona"
+        },
+        {
+            "type": "text",
+            "content": "Wireframe\nAprès s'être bien préparé sur ce qu'on voulait faire, nous avons décidé de faire le wireframe, une idée très primitive de l'interface utilisateur de notre future application. Après plusieurs dizaines de post-its regroupant nos différentes idées, nous nous sommes mis d'accord sur une idée."
+        },
+        {
+            "type": "image",
+            "src": "/assets/WireframeProjet2.png",
+            "alt": "Wireframe final de notre application fait sur post-its"
+        },
+        {
+            "type": "chapter",
+            "content": "Prototype et Tests Utilisateurs"
+        },
+        {
+            "type": "text",
+            "content": "Nous avons ensuite utilisé Figma pour la première fois pour créer le prototype basse fidélité de notre application, sans aucune couleur."
+        },
+        {
+            "type": "video",
+            "src": "/assets/ShowcaseProjet2.mp4",
+            "alt": "Commande de produit sur le low-fi de l'application"
+        },
+        {
+            "type": "text",
+            "content": "Puis nous avons demandé a nos collègues de formation de tester notre application, en prenant en compte les difficultés qu'ils ont a naviguer entre les différentes pages et si ils pouvaient suivre nos tâches sans se perdre."
+        },
+        {
+            "type": "chapter",
+            "content": "Mid-Fi et High-Fi"
+        },
+        {
+            "type": "text",
+            "content": "Nous avons peaufiné notre application sur Figma en tenant compte des tests utilisateurs, et en mettant de la couleur. Malheureusement, par faute de temps, nous n'avons pas pu beaucoup travailler sur le Mid-Fi, nous sommes directement passé au High-Fi."
+        },
+        {
+            "type": "image",
+            "src": "/assets/MidFiProjet2.png",
+            "alt": "Les seules pages que nous avons pu faire en Mid-Fi"
+        },
+        {
+            "type": "text",
+            "content": "Nous avons fait le High-Fi assez rapidement du au manque de temps a cause d'un problème qui a fait que j'étais seul a travailler pendant 2 jours, nous avons quand même réussi a le finir et nous en sommes bien content, nous l'avons présenter a notre classe, comme si cela était un projet que nous présentions a des entreprises/ des financeurs."
+        },
+        {
+            "type": "image",
+            "src": "/assets/HighFiProjet2.png",
+            "alt": "High-Fi de notre projet"
+        }
+    ]
+}

@@ -6,6 +6,7 @@ export function ProjectTemplate() {
   const [projet, setProjet] = useState(null);
 
   useEffect(() => {
+    // Fetch des données du projet
     fetch(`/assets/projet${id}.json`)
       .then((response) => {
         if (!response.ok) {
@@ -17,6 +18,42 @@ export function ProjectTemplate() {
       .catch((error) => {
         console.error("Erreur lors du chargement du projet:", error);
       });
+
+    // Fonction pour gérer le scroll et appliquer l'effet sticky
+    const handleScroll = () => {
+      const sommaire = document.querySelector(".sommaire");
+      const coverImage = document.querySelector(".img_projet_main");
+      const footer = document.querySelector("footer"); // Assurez-vous que votre footer a bien cette balise ou classe
+
+      if (sommaire && coverImage && footer) {
+        const coverImageHeight = coverImage.offsetHeight;
+        const footerRect = footer.getBoundingClientRect();
+        const sommaireHeight = sommaire.offsetHeight;
+
+        if (window.scrollY > coverImageHeight) {
+          if (footerRect.top <= sommaireHeight) {
+            sommaire.style.position = "absolute";
+            sommaire.style.top = `${
+              window.scrollY + footerRect.top - sommaireHeight - 20
+            }px`;
+          } else {
+            sommaire.style.position = "fixed";
+            sommaire.style.top = "20px";
+          }
+        } else {
+          sommaire.style.position = "absolute";
+          sommaire.style.top = `${coverImageHeight}px`;
+        }
+      }
+    };
+
+    // Ajout de l'event listener lors du scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Nettoyage de l'event listener quand le composant est démonté
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [id]);
 
   if (!projet) {
@@ -47,6 +84,13 @@ export function ProjectTemplate() {
           <p className="projet_div_img_desc">{bloc.alt}</p>
         </div>
       );
+    } else if (bloc.type === "video") {
+      return (
+        <div key={index} className="projet_div_vid">
+          <video muted controls src={bloc.src} alt={bloc.alt} />
+          <p className="projet_div_img_desc">{bloc.alt}</p>
+        </div>
+      );
     } else {
       return null; // Retourne null pour les types non supportés
     }
@@ -55,7 +99,8 @@ export function ProjectTemplate() {
   return (
     <>
       {/* Sommaire */}
-      <div className="sommaire open-sans-regular">
+      <div className="sommaire open-sans-regular flex">
+        <div className="sommaire_separateur"></div>
         <ul>
           {chapitres.map((chapitre, index) => (
             <li key={index}>
@@ -77,6 +122,11 @@ export function ProjectTemplate() {
         <div className="flex">
           <h1 id="Introduction">
             {"Projet " + projet.index + " : " + projet.titre}
+            {projet.link && (
+              <a href={projet.link}>
+                <i class="fa-brands fa-github"></i>
+              </a>
+            )}
           </h1>
           <ul className="flex tags_projet">
             {projet.tags.map((tag, index) => (

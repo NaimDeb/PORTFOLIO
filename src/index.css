@@ -1,3 +1,5 @@
+section {scroll-margin-top: 100px;}
+
 *{
     margin: 0;
     padding: 0;
@@ -153,7 +155,7 @@ header a i{
         min-width: 110%;
         min-height: 95vh;
         
-        top:-10vh;
+        top:-5vh;
         /* -2vh to fix the clipping at the right for lower resolutions */
         right: -2vh;
         z-index: -1;
@@ -245,7 +247,7 @@ header a i{
 
     .go_next{
         position: absolute;
-        bottom: 0;
+        bottom: -5vh;
         left: 0;
         min-width: 100%;
         font-size: 5vh;
@@ -372,6 +374,10 @@ header a i{
     bottom: 1vh;
     right: 2vh;
 
+}
+
+.projet_div_vid{
+    text-align: center;
 }
 
 .projet_case:hover .projet_article_div{
@@ -531,13 +537,21 @@ footer a{
 .sommaire {
     width: 15%;
     height: 100%;
+    margin-top: 40px;
     position: fixed;
-    top: 46px;
+    top: 40px;
     right: 0;
-    align-self: flex-start;
-    padding-left:50px;
-    background-color: #212121;
+    gap:10%
 }
+
+.sommaire_separateur{
+    background-color: #dedede;
+    width: 2px;
+    height: 60%;
+    margin-top: 50%;
+}
+
+
 .sommaire li {
     list-style: none;
   margin-top:20px;
@@ -546,6 +560,7 @@ footer a{
 .sommaire a {
     text-decoration: none;
     color: #dedede;
+    font-size: 1.8vh;
     font-weight: 600;
     transition: all 0.3s ease-in-out
 }
@@ -559,6 +574,8 @@ footer a{
     height: 50vh;
     object-fit: cover;
     margin-bottom: 2vh;
+    filter: blur(2px);
+    z-index: -1;
 
 }
 
@@ -567,6 +584,14 @@ footer a{
     padding: 0 20vw;
     margin-right: 15%;
 }
+
+.projet_div i{
+    font-size: 3.5vh;
+    margin-left: 1vw;
+    color: #dedede;
+
+}
+
 
 .projet_div h1{
     font-size: 2vw;
@@ -585,7 +610,7 @@ footer a{
     display: block;
     margin: auto;
     width: 45vw;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 
