@@ -8,6 +8,16 @@ import video from "./Videos/squarething.mp4";
 function App() {
   const [projects, setProjects] = useState([]);
 
+  // Pour filtrer les projets
+  const [filter, setFilter] = useState("All");
+
+  const filteredProjects = projects.filter((project) =>
+    filter === "All" ? true : project.tags.includes(filter)
+  );
+
+  // Obtenir tous les tags uniques en une seule liste (on flat la map), le ... sert a décomposer les listes en éléments individuels
+  const allTags = [...new Set(projects.flatMap((project) => project.tags))];
+
   useEffect(() => {
     fetch("projets.json")
       .then((rep) => rep.json())
@@ -60,6 +70,8 @@ function App() {
             </div>
           </section>
 
+          {/* Section projets, Filtres*/}
+
           <section className="container sect_projets" id="MesProjets">
             <h2 className="white open-sans-gras">Mes projets</h2>
 
@@ -67,20 +79,33 @@ function App() {
 
             <div>
               <p className="white open-sans-regular">Filtres</p>
-              <nav className="white open-sans-regular">
-                <ul className="flex liste_filtres">
-                  <li className="projet_article_tag">#Lorem</li>
-                  <li className="projet_article_tag">#Lorem</li>
-                  <li className="projet_article_tag">#Lorem</li>
-                  <li className="projet_article_tag">#Lorem</li>
-                </ul>
-              </nav>
+              <div className="flex liste_filtres">
+                <button
+                  className="projet_article_tag"
+                  onClick={() => setFilter("All")}
+                >
+                  Tout voir
+                </button>
+                {allTags.map((tag, index) => (
+                  <button
+                    key={index}
+                    className={`projet_article_tag ${
+                      filter === tag ? "selected" : ""
+                    }`}
+                    onClick={() => setFilter(tag)}
+                  >
+                    {"#" + tag}
+                  </button>
+                ))}
+              </div>
             </div>
 
             <div className="separateur_big"></div>
 
+            {/* Section projets, Cartes*/}
+
             <div className="flex liste_articles animGauche">
-              {projects.map((project, index) => (
+              {filteredProjects.map((project, index) => (
                 <Card
                   key={index}
                   link={index + 1}
@@ -120,11 +145,11 @@ function App() {
             <div className="form-container white open-sans-regular">
               <form className="form">
                 <div className="form-group">
-                  <label for="email">Votre mail</label>
+                  <label htmlFor="email">Votre mail</label>
                   <input type="text" id="email" name="email" required="" />
                 </div>
                 <div className="form-group">
-                  <label for="textarea">Votre message</label>
+                  <label htmlFor="textarea">Votre message</label>
                   <textarea
                     name="textarea"
                     id="textarea"
@@ -152,42 +177,5 @@ function App() {
 
   return <RouterProvider router={router} />;
 }
-
-//   return (
-//     <section class="container sect_projets" id="MesProjets">
-//       <h2 class="white open-sans-gras">Mes projets</h2>
-
-//       <div class="separateur"></div>
-
-//       <div>
-//         <p class="white open-sans-regular">Filtres</p>
-//         <nav class="white open-sans-regular">
-//           <ul class="flex liste_filtres">
-//             <li class="projet_article_tag">#Lorem</li>
-//             <li class="projet_article_tag">#Lorem</li>
-//             <li class="projet_article_tag">#Lorem</li>
-//             <li class="projet_article_tag">#Lorem</li>
-//           </ul>
-//         </nav>
-//       </div>
-
-//       <div class="separateur_big"></div>
-
-//       <div class="flex liste_articles animGauche">
-//         {projects.map((project, index) => (
-//           <Card
-//             key={index}
-//             titre={project.titre}
-//             date={project.date}
-//             description={project.description}
-//             image={project.image}
-//             link={project.link}
-//             tags={project.tags}
-//           />
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
 
 export default App;

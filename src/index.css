@@ -314,6 +314,13 @@ header a i{
     text-shadow: none;
     max-height: 3vh;
     list-style: none;
+    box-shadow: none;
+	border: none;
+}
+
+.projet_article_tag.selected{
+    color: #dedede;
+    background-color: #212121;
 }
 
 
@@ -326,14 +333,21 @@ header a i{
 .projet_case{
     max-width: 30vw;
     max-height: 30vh;
+    min-width: 30vw;
+    min-height: 30vh;
     position: relative;
     transition: all 0.5s ease;
     overflow: hidden;
+    box-shadow: #0e100f 2px 2px 3px;
+}
+
+.projet_case:active{
+    margin-top: 5px;
 }
 
 .projet_article{
     margin-bottom: 5vh;
-    flex-basis: 30%;
+    flex-basis: 33%;
 }
 
 .projet_article_img{
@@ -574,7 +588,7 @@ footer a{
     height: 50vh;
     object-fit: cover;
     margin-bottom: 2vh;
-    filter: blur(2px);
+    filter: blur(2px) brightness(75%);
     z-index: -1;
 
 }
@@ -622,6 +636,11 @@ footer a{
 
 .projet_div p, .projet_div_img_desc{
     margin-bottom: 8vh;
+    font-size: 2vh;
+}
+
+.projet_div p{
+    margin-left: 8px ;
 }
 
 .tags_projet{
