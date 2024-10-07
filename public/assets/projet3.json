@@ -1,0 +1,19 @@
+{
+    "index": 3,
+    "titre": "EcoChallenge",
+    "date": "06/2024",
+    "description": "Travail final de formation en groupe",
+    "coverimage": "/assets/EcoChallenge.png",
+    "link": "https://ecochallenge.glitch.me/",
+    "tags": ["Design", "Application mobile", "Site web","Front-End", "La Toile"],
+    "texte": [
+        {
+            "type": "chapter",
+            "content": "Todo"
+        },
+        {
+            "type": "text",
+            "content": "Voici le lien du Notion que nous avons fait lors du projet. L'application est disponible sur le site. : https://cedar-farmer-670.notion.site/P3-Documentation-projet-7f25de8094ad4804bfe588254d7cc95c?pvs=4"
+        }
+    ]
+}

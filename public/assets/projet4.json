@@ -1,0 +1,36 @@
+{
+    "index": 4,
+    "titre": "FeatherSight",
+    "date": "05/2024",
+    "description": "Travail avec un CMS.",
+    "coverimage": "/assets/FeatherSight2.png",
+    "link": "https://preview.webflow.com/preview/pigeonsight-landing-page?utm_medium=preview_link&utm_source=designer&utm_content=pigeonsight-landing-page&preview=8cb629579a85c983b12534d10b428722&workflow=sitePreview",
+    "tags": ["Design", "Site web","Front-End", "La Toile"],
+    "texte": [
+        {
+            "type": "chapter",
+            "content": "Déroulement"
+        },
+        {
+            "type": "text",
+            "content": "Pour notre premier projet avec un CMS, nous devions utiliser Webflow, une plateforme de creation de site web, et nous devions créer un site web qui présente un objet ou une idée loufoque, que nous présenterons en classe. Pour nous faciliter la tâche, nous pouvions utiliser des images générés par l'IA."
+        },
+        {
+            "type": "chapter",
+            "content": "Planification"
+        },
+        {
+            "type": "text",
+            "content": "De mon côté, j'ai proposé l'idée d'un casque à réalité augmentée appelée FeatherSight, qui nous permet de choisir un pigeon et de vivre dans sa peau, tout en imitant les prix énormes des dernières technologies ainsi que des techniques de commerce pour se faire le plus d'argent possible, tel que des abonnements ou des chargeurs vendus séparément."
+        },
+        {
+            "type": "image",
+            "src": "/assets/FeatherSight_abo.png",
+            "alt": "Tout rentre dans le thème du pigeon, y compris le client."
+        },
+        {
+            "type": "text",
+            "content": "Je me suis basé sur le site d'Apple Vision, pour son côté minimal et 'futuristique'"
+        } 
+    ]
+}
